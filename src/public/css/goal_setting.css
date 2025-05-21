@@ -1,0 +1,123 @@
+.header {
+    padding: 10px 20px;
+    width: 1512px;
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.header__logo {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    color: #EC87EF;
+    text-decoration: none;
+}
+
+.header-nav {
+    width: 319px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav__setting-link {
+    margin: auto;
+    margin-right: 20px;
+    padding: 8px 6px 4px 6px;
+    width: 138px;
+    height: 44px;
+    background: #F7F7F7;
+    border: 1px solid #CDCDCD;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+.header-nav__from-button {
+    margin: auto;
+    margin-right: 20px;
+    padding: 8px 4px 10px;
+    width: 138px;
+    height: 44px;
+    background: #F7F7F7;
+    border: 1px solid #CDCDCD;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+}
+
+
+.content {
+    position: relative;
+    width: 1512px;
+    height: 968px;
+    background: #F9F9F9;
+}
+
+.content__inner {
+    padding: 30px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 470px;
+    height: 298px;
+    border: 1px solid #8B7969;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(139, 121, 105, 0.25);
+    transform: translate(-50%, -50%);
+}
+
+.content__header {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.setting-form__group {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.setting-form__group input {
+    margin-top: 10px;
+    padding: 11px 10px;
+    width: 90%;
+    border: 1px solid #E0DFDF;
+    border-radius: 5px;
+}
+
+.setting-form__alert-danger {
+    font-size: 14px;
+    color: #F65A5A;
+}
+
+.setting-form__button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.setting-form__button-reverse {
+    margin-right: 10px;
+    padding: 13px 40px;
+    border: none;
+    border-radius: 12px;
+    background: #E0DFDF;
+    box-shadow: 0px 2px 4px -1px #000000;
+    text-decoration: none;
+    color: #000000;
+}
+
+.setting-form__button-submit {
+    margin-right: 10px;
+    padding: 13px 40px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #A3A6E1, #FFABD9);
+    box-shadow: 0px 2px 4px -1px #4B0082;
+    font-size: 16px;
+    color: #FFFFFF;
+}

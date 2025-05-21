@@ -1,0 +1,115 @@
+body {
+    width: 1512px;
+    height: 1100px;
+    background: linear-gradient(125deg, #A3A6E1, #FFABD9 10%, #EE82EE 70%, #FFABD9 80%);
+}
+
+.auth-form--small {
+    margin: 130px auto;
+    padding: 40px;
+    width: 580px;
+    height: 560px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.auth-form--big {
+    margin: 130px auto;
+    padding: 40px;
+    width: 580px;
+    height: 721px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.auth-form__heading {
+    margin: 0 auto;
+    padding: 5px;
+    width:195px;
+    height: 132px;
+    text-align: center;
+}
+
+.auth-form__heading-logo {
+    margin: 10px 0 0 0;
+    height: 77px;
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    color: #EC87EF;
+}
+
+.auth-form__heading-title {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Hiragino Mincho Pro', serif;
+    color: #333333;
+}
+
+.auth-form__step {
+    margin: 30px auto;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Hiragino Kaku Gothic Pro', serif;
+    text-align: center;
+    color: #333333;
+}
+
+.form__group {
+    margin-top: 30px;
+    width: 500px;
+    height: 77px;
+}
+
+.form__group-title {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Hiragino Kaku Gothic Pro', serif;
+    color: #333333;
+}
+
+.form__group-text input{
+    margin-top: 10px;
+    padding: 11px 10px;
+    width: 478px;
+    height: 43px;
+    border: 1px solid #E0DFDE;
+    border-radius: 5px;
+}
+
+.form__group-alert {
+    font-size: 14px;
+    color: #F65A5A;
+}
+
+.form__group-button {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.form__group-button--submit {
+    padding: 10px;
+    width: 250px;
+    height: 50px;
+    background: linear-gradient(110deg, #A3A6E1, #FFABD9);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Hiragino Kaku Gothic Pro', serif;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.form__group-link {
+    text-align: center;
+}
+
+.form__group-link a {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Hiragino Mincho Pro', serif;
+    color: #2C99FF;
+}
