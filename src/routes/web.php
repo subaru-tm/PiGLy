@@ -5,6 +5,7 @@ use App\Http\Middleware\Authenticate;
 use App\Http\Controllers\WeightLogController;
 use App\Http\Controllers\WeightTargetController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\GoalCreateController;
 use App\Providers\FortifyServiceProvider;
 
 /*
@@ -20,8 +21,8 @@ use App\Providers\FortifyServiceProvider;
 
 Route::get('/register/step1', [AuthController::class, 'create']);
 Route::post('/register/step1', [AuthController::class, 'store']);
-Route::get('/register/step2', [WeightTargetController::class, 'create']);
-Route::post('/register/step2', [WeightTargetController::class, 'store']);
+Route::get('/register/step2', [GoalCreateController::class, 'create']);
+Route::post('/register/step2', [GoalCreateController::class, 'store']);
 Route::get('/logout', [AuthController::class, 'destroy']);
 
 Route::middleware('auth')->group(function () {
