@@ -11,14 +11,14 @@
  
 - モデル・マイグレーションファイルの作成コマンド・ファイル名
   - php artisan make:model WeightTarget -m
-    - 作成したファイル名
+    - 作成ファイル名
       - WeightTarget.php
       - 2025_05_15_163354_create_weight_targets_table.php
           - ↑↑ 注）テーブル仕様に従いファイル名をリネーム済（テーブル名部分の"s"を取り除く）
   - php artisan make:model WeightLog -m
-    - 作成したファイル名
-    - WeightLog.php
-    - 2025_05_15_163437_create_weight_logs_table.php
+    - 作成ファイル名
+    　- WeightLog.php
+    　- 2025_05_15_163437_create_weight_logs_table.php
 
 - シーダー・ファクトリファイルの作成・実行
   - php artisan make:seeder UsersTableSeeder
@@ -45,10 +45,10 @@
       - WeightTargetRequest
   - 上述の中で、Fortifyの認証を一部分離しましたが、ログイン機能だけは一部不安があり、標準のFortifyをそのまま使っています。
     - つまりログインでのバリデーションは標準のままとなっており、要件を満たせていないです。
-  - ページネーションのスタイル変更のため、下記を実行してカスタムの元としています。
+  - ページネーションのスタイル変更のため、下記を実行してテンプレートを取得してカスタマイズしています。
     - php artisan vendor:publish --tag=laravel-pagination
       - resources/views/vendor/pagination配下にテンプレートが作成されたため、このうちの"default.blade.php"をコピーし、
-      - weight-log-pagination.blade.php として修正して、同じ名称のcssファイルにてスタイルカスタムしました。
+      - weight-log-pagination.blade.php として修正して、同じ名称のcssファイルにてスタイルしました。
 
 ## 使用技術
 - Laravel Framework 8.83.8
