@@ -47,7 +47,7 @@ class WeightLogController extends Controller
             'exercise_content' => $request->exercise_content,
         ]);
 
-        return redirect('weight_logs.#create');
+        return redirect('weight_logs');
     }
 
     public function detail($weightLogId) {
