@@ -214,7 +214,7 @@
             {{ $weight_logs->appends([
                 'from' => $from,
                 'until' => $until,
-                ])->links() }}
+                ])->links('vendor.pagination.weight-log-pagination') }}
         </div>
     </div>
 </div>
