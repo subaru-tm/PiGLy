@@ -44,7 +44,7 @@
       - WeightLogRequest
       - WeightTargetRequest
   - 上述の中で、Fortifyの認証を一部分離しましたが、ログイン機能だけは一部不安があり、標準のFortifyをそのまま使っています。
-    - つまりログインでのバリデーションは標準のままとなっており、要件を満たせていないです。
+    - つまりログインでのバリデーションは標準のままとなっており、要件と一部異なります。（エラーは表示されるがメッセージ表記が異なる）
   - ページネーションのスタイル変更のため、下記を実行してテンプレートを取得してカスタマイズしています。
     - php artisan vendor:publish --tag=laravel-pagination
       - resources/views/vendor/pagination配下にテンプレートが作成されたため、このうちの"default.blade.php"をコピーし、
