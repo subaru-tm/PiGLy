@@ -49,6 +49,10 @@
     - php artisan vendor:publish --tag=laravel-pagination
       - resources/views/vendor/pagination配下にテンプレートが作成されたため、このうちの"default.blade.php"をコピーし、
       - weight-log-pagination.blade.php として修正して、同じ名称のcssファイルにてスタイルしました。
+  - ER図でのカーディナリティ表記（1:0を許容）ついて
+    - 要件を日本語として読み解くと、論理的にはuserに対して1:0状態（ユーザーのみ作成され、目標体重、logがない）は起こり得ないと解釈もできます。
+    - ですが、今回の物理的な実装では、アカウント登録時（step1完了後、step2が登録されるまで）は、一時的に1:0が起こり得ます。
+      - この1:0状態をNGとするような機能（まとめて登録 or チェック）は用意していないこともあり、物理と整合を合わせることも意識して1:0としてER図も表記しています。
 
 ## 使用技術
 - Laravel Framework 8.83.8
